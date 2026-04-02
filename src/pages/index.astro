@@ -1,11 +1,119 @@
----
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+<h1>Catalogo de Quesos</h1>
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
----
+<section class="catalogo">
 
-<Layout>
-	<Welcome />
-</Layout>
+<article class="card">
+<img src="/cremoso.jpg">
+<h2>Queso Cremoso</h2>
+<p class="precio">$4.500</p>
+</article>
+
+<article class="card">
+<img src="/tybo.jpg">
+<h2>Queso Tybo</h2>
+<p class="precio">$6.100</p>
+</article>
+
+<article class="card">
+<img src="/pategras.jpg">
+<h2>Queso Pategras</h2>
+<p class="precio">$6.200</p>
+</article>
+
+<article class="card">
+<img src="/gouda.jpg">
+<h2>Queso Gouda</h2>
+<p class="precio">$7.600</p>
+</article>
+
+<article class="card">
+<img src="/edam.jpg">
+<h2>Queso Edam</h2>
+<p class="precio">$7.800</p>
+</article>
+
+<article class="card">
+<img src="/provolone.jpg">
+<h2>Queso Provolone</h2>
+<p class="precio">$8.700</p>
+</article>
+
+<article class="card">
+<img src="/sardo.jpg">
+<h2>Queso Sardo</h2>
+<p class="precio">$8.400</p>
+</article>
+
+<article class="card">
+<img src="/reggianito.jpg">
+<h2>Queso Reggianito</h2>
+<p class="precio">$8.900</p>
+</article>
+
+<article class="card">
+<img src="/azul.jpg">
+<h2>Queso Azul</h2>
+<p class="precio">$9.200</p>
+</article>
+
+<article class="card">
+<img src="/brie.jpg">
+<h2>Queso Brie</h2>
+<p class="precio">$9.800</p>
+</article>
+
+<article class="card">
+<img src="/camembert.jpg">
+<h2>Queso Camembert</h2>
+<p class="precio">$9.900</p>
+</article>
+
+<article class="card">
+<img src="/gorgonzola.jpg">
+<h2>Queso Gorgonzola</h2>
+<p class="precio">$10.500</p>
+</article>
+
+</section>
+
+<style>
+body{
+font-family:Arial;
+background:#f5f5f5;
+}
+
+h1{
+text-align:center;
+margin:30px;
+}
+
+.catalogo{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+padding:20px;
+}
+
+.card{
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+h2{
+padding:10px;
+}
+
+.precio{
+padding:0 10px 15px;
+font-weight:bold;
+color:green;
+}
+</style>
