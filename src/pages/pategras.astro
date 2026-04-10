@@ -1,23 +1,26 @@
-<a href="/">← Volver al catalogo</a>
+<a href="/">← Volver al catálogo</a>
 
 <section class="producto">
-<div class="imagenes">
-<img class="principal" src="/pategras.jpg">
-<div class="miniaturas">
+<div class="galeria">
 <img src="/pategras.jpg">
 <img src="/pategras2.jpg">
 </div>
-</div>
 
 <div class="info">
-<h1>Queso Pategras</h1>
+<h1>Queso Pategrás</h1>
 <p class="precio">$6.200</p>
 
 <p>
-Queso semiduro de origen europeo. Sabor suave y ligeramente
-dulce. Ideal para picadas, gratinados y tablas de quesos.
+Queso semiduro de sabor suave y ligeramente dulce.
+Ideal para picadas y gratinados.
 </p>
-
-<button>Pedir catalogo</button>
 </div>
 </section>
+
+<style>
+.producto{display:flex;gap:40px;padding:40px;align-items:center;}
+.galeria{display:flex;gap:20px;overflow-x:auto;max-width:600px;}
+.galeria img{width:600px;height:400px;object-fit:cover;border-radius:10px;flex-shrink:0;}
+.info{max-width:400px;}
+.precio{font-size:24px;font-weight:bold;}
+</style>

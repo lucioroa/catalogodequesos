@@ -1,12 +1,9 @@
-<a href="/">← Volver al catalogo</a>
+<a href="/">← Volver al catálogo</a>
 
 <section class="producto">
-<div class="imagenes">
-<img class="principal" src="/gouda.jpg">
-<div class="miniaturas">
+<div class="galeria">
 <img src="/gouda.jpg">
 <img src="/gouda2.jpg">
-</div>
 </div>
 
 <div class="info">
@@ -14,10 +11,16 @@
 <p class="precio">$7.600</p>
 
 <p>
-Queso semiduro de sabor suave y textura elástica. Muy usado
-en sandwiches, hamburguesas y tablas de quesos.
+Queso semiduro de sabor suave y textura elástica.
+Muy usado en sandwiches y tablas de quesos.
 </p>
-
-<button>Pedir catalogo</button>
 </div>
 </section>
+
+<style>
+.producto{display:flex;gap:40px;padding:40px;align-items:center;}
+.galeria{display:flex;gap:20px;overflow-x:auto;max-width:600px;}
+.galeria img{width:600px;height:400px;object-fit:cover;border-radius:10px;flex-shrink:0;}
+.info{max-width:400px;}
+.precio{font-size:24px;font-weight:bold;}
+</style>
